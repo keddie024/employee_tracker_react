@@ -38,7 +38,17 @@ class DataArea extends Component {
     this.setState({ employees });
   }
 
+  filterMale = () => {
+    let employees = [...this.state.employees];
+    let filteredEmployees = employees.filter(employee => employee.gender === "male");
+    this.setState({ employees: filteredEmployees });
+  }
 
+  filterFemale = () => {
+    let employees = [...this.state.employees];
+    let filteredEmployees = employees.filter(employee => employee.gender === "female");
+    this.setState({ employees: filteredEmployees });
+  }
 
   render() {
     if (!this.state.employees.length) {
@@ -50,6 +60,8 @@ class DataArea extends Component {
         <div id="btnDiv">
           <button onClick={this.sortFirstName} className="btn">Sort by First Name</button>
           <button onClick={this.sortLastName} className="btn">Sort by Last Name</button>
+          <button onClick={this.filterMale} className="btn">Filter by Male</button>
+          <button onClick={this.filterFemale} className="btn">Filter by Female</button>
         </div>
 
         <div id="tableDiv">
