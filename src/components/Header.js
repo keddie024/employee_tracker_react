@@ -4,8 +4,8 @@ import "../styles/Header.css";
 export default class Header extends Component {
     render() {
         return (
-            <div>
-                <h2>Employee Directory</h2>
+            <div id="headerDiv">
+                <h2 id="headerText">Employee Directory</h2>
             </div>
         );
     }

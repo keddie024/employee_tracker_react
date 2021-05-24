@@ -1,0 +1,29 @@
+button {
+    justify-content: space-between;
+    font-size: 24px;
+    color:cornsilk;
+    background-color: cornflowerblue;
+    border-style:dashed;
+    border-color: darkblue;
+}
+
+#btnDiv {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+#tableDiv {
+    display:flex;
+    justify-content: center;
+}
+
+#dataTable {
+    text-align: center;
+    width:100%;
+    color:cornsilk;
+    background-color: cornflowerblue;
+    border-style: solid;
+    border-color: darkblue;
+}
