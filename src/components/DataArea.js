@@ -30,6 +30,13 @@ class DataArea extends Component {
     this.setState({employees});
   }
 
+  sortLastName () {
+    let employees = [...this.state.employees];
+
+    employees.sort((a,b) => a.lastName.localeCompare(b.lastName));
+    this.setState({employees});
+  }
+
 }
 
 export default DataArea;
